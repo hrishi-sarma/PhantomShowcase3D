@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+            "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+        }
+    }
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#skill-bg">Skills</a></li>
+      <li><a href="project.html">Projects</a></li>
+    </ul>
+  </nav>
+  <div class="skill-bg">
+    <div class="background-rotate" id="three-container"></div>
+  </div>
+  <div class="intro-section">
+    <div class="text-box">
+      <h1>RX-7 FC PHANTOM</h1>
+      <p>Bodykit for the 1985 RX-7 FC</p>
+    </div>
+    <div class="education-box">
+      <h1>Change View:</h1>
+      <div>
+        <button id="toggleView">Switch View</button>
+      </div>
+    </div>
+    <div class="prog-lang">
+      <h1>Show Stock Version:</h1>
+      <button id="toggleModel" class="stock">Stock</button>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

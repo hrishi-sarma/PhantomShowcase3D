@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    margin: 0 30px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: rgb(0, 0, 0);
+}
+
+.navbar li {
+    float: left;
+}
+
+
+.intro-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    overflow: hidden;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background: url('pics/asdfg.jpg') no-repeat center center;
+    background-size: cover; 
+}
+
+.text-box{
+    font-family: 'Courier New', Courier, monospace;
+    width: 45%; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: rgb(255, 255, 255);
+    margin-top: -500px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+}
+.education-box {
+    font-family: 'Courier New', Courier, monospace;
+    width: 45%; /* Adjust width */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: rgb(255, 255, 255);
+    margin-top: 750px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+}
+
+.education-box ul {
+    list-style-type: disc; 
+    text-align: left; 
+    margin: 0;
+    padding-left: 20px; 
+}
+
+.prog-lang {
+    font-family: 'Courier New', Courier, monospace;
+    width: 45%; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: rgb(255, 255, 255);
+    margin-top: -500px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+}
+.prog-lang ul{
+    list-style-type: disc; 
+    text-align: left; 
+    margin: 0;
+    padding-left: 20px; 
+}
+
+
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+
+    .text-box,
+    .education-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+.Red-Line {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    background-color: #000;
+    border-top: 5px solid red;
+    margin-bottom: 200px; 
+}
+
+.skill-bg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.background-rotate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.skill-list {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    margin-top: -100px;
+    z-index: 2;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.Home-Main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.Background-Illuminate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.Home-Categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.skills {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+.Home-Categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    background: url('pics/back.jpg') no-repeat center center; 
+    background-size: cover;
+    height: 100%;
+    width: 100%
+}
+
+.card {
+    position: relative;
+    width: 25%;
+    height: 700px;
+    overflow:hidden;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card p {
+    margin: 10px 0 0;
+}
+
+.button-container {
+    display: block;
+    justify-content: center;
+    margin-top: 20px; 
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.button {
+    display: inline-block;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.Projects {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    z-index: 2;
+    text-align: center;
+    margin: 0 auto;
+}
