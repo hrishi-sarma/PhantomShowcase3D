@@ -33,7 +33,6 @@ body {
     float: left;
 }
 
-
 .intro-section {
     position: relative;
     height: 100vh;
@@ -48,7 +47,7 @@ body {
     background-size: cover; 
 }
 
-.text-box{
+.text-box {
     font-family: 'Courier New', Courier, monospace;
     width: 45%; 
     background-color: rgba(0, 0, 0, 0.7); 
@@ -59,11 +58,12 @@ body {
     z-index: 2;
     text-align: center;
 }
+
 .education-box {
     font-family: 'Courier New', Courier, monospace;
     width: 45%; /* Adjust width */
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
     margin-top: 750px;
     padding: 20px;
     box-sizing: border-box;
@@ -82,20 +82,20 @@ body {
     font-family: 'Courier New', Courier, monospace;
     width: 45%; 
     background-color: rgba(0, 0, 0, 0.7); 
-    color: rgb(255, 255, 255);
-    margin-top: -500px;
+    color: rgb(255, 0, 0);
+    margin-top: 750px;
     padding: 20px;
     box-sizing: border-box;
     z-index: 2;
     text-align: center;
 }
-.prog-lang ul{
+
+.prog-lang ul {
     list-style-type: disc; 
     text-align: left; 
     margin: 0;
     padding-left: 20px; 
 }
-
 
 @media (max-width: 768px) {
     .intro-section {
@@ -224,7 +224,7 @@ body {
     position: relative;
     width: 25%;
     height: 700px;
-    overflow:hidden;
+    overflow: hidden;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -280,7 +280,6 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
-    
 }
 
 .button:hover {
@@ -296,4 +295,59 @@ body {
     z-index: 2;
     text-align: center;
     margin: 0 auto;
+}
+
+.view {
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #000;
+    border: 2px solid #000;
+}
+
+.view:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.stock {
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #000;
+    border: 2px solid #000;
+}
+
+.stock:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.title {
+    text-align: center; /* Center align the text */
+}
+
+.title h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #000;
+    border: 2px solid #000;
+}
+
+.title h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ff0000;
+    height: 100%;
+    width: 100%;
+    margin-top: -30px;
+    padding: 10px;
+    font-style: italic;
+    background-color: #000;
+    border: 2px solid #000;
 }
